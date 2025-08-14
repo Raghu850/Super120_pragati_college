@@ -1,0 +1,7 @@
+def rec_1_N(index,n):
+    if index==n+1:
+        return 
+    print(index,end=" ")
+    rec_1_N(index+1,n)
+n=int(input())
+rec_1_N(1,n)
