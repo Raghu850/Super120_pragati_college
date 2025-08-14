@@ -1,0 +1,7 @@
+def number(n:int):
+    if n==0:
+        return 
+    else:
+        print(n);number(n-1)
+n=int(input())
+number(n)
