@@ -1,0 +1,9 @@
+def check_sorted_list(n,i):
+    m=True
+    if i<len(n)-1:
+        if n[i]>n[i+1]:
+            return False
+        m=check_sorted_list(n,i+1)
+    return m
+n=[1,2,3,4]
+print(check_sorted_list(n,0))
