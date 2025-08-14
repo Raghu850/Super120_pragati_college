@@ -1,0 +1,6 @@
+def is_sorted(index,nums):
+     if index==len(nums)-1:
+         return True 
+     return (nums[index]<nums[index+1] and is_sorted(index+1,nums))
+ nums=[2,4,6,9,89]
+ print(is_sorted(0,nums)) 
